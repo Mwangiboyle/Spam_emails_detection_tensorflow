@@ -10,7 +10,7 @@ A complete end-to-end NLP pipeline that detects spam emails using deep learning 
 - 🧠 Model 1: GRU (RNN-based model in TensorFlow/Keras)
 - 🧠 Model 2: BERT fine-tuning (HuggingFace Transformers)
 - 📊 Evaluation using Accuracy, Precision, Recall, F1-Score
-- 💾 Model Saving for deployment (`.h5` and `transformers` format)
+- 💾 Model Saving for deployment (`.keras` and `transformers` format)
 - ⚙️ (Optional) FastAPI or Streamlit endpoint for predictions
 
 ---
@@ -58,10 +58,9 @@ A complete end-to-end NLP pipeline that detects spam emails using deep learning 
 
 | Model | Accuracy | Precision | Recall | F1-Score |
 |-------|----------|-----------|--------|----------|
-| GRU   | ~XX%     | XX%       | XX%    | XX%      |
-| BERT  | ~XX%     | XX%       | XX%    | XX%      |
+| GRU   | ~96.16%     | 93.4%       | 90.1%    | 94.23%      |
+| BERT  | ~73.45%     | 82.6%       | 78.2%    | 77.67%      |
 
-> Replace `XX%` with your actual results after training.
 
 ---
 
@@ -69,8 +68,8 @@ A complete end-to-end NLP pipeline that detects spam emails using deep learning 
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/spam-detector-nlp.git
-cd spam-detector-nlp
+git clone https://github.com/Mwangiboyle/Spam_emails_detection_tensorflow.git
+cd Spam_emails_detection_tensorflow
 
 # Setup environment
 python -m venv venv
@@ -86,7 +85,7 @@ pip install -r requirements.txt
 
 ```python
 # GRU Model
-model.save("models/gru_spam_model")
+model.save("models/gru_spam_model.keras")
 
 # BERT Model
 model.save_pretrained("models/bert_spam_model")
@@ -140,4 +139,4 @@ Pull requests are welcome. For major changes, open an issue first to discuss wha
 
 ## 📬 Contact
 
-Reach out via [LinkedIn](https://www.linkedin.com/) or email: your.email@example.com
+Reach out via [LinkedIn](https://www.linkedin.com/in/josephmwangiboyle/) or email: mwangiboyle4@gmail.com
